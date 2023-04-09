@@ -13,8 +13,10 @@ class ProductController extends Controller
     {
         $products = Product::all();
         return $products;
+
     }
 
+   
     public function store(Request $request)
     {
         $product = new Product();
@@ -23,15 +25,16 @@ class ProductController extends Controller
         $product->stock = $request->stock;
 
         $product->save();
-
     }
- 
+
+   
     public function show($id)
     {
         $product = Product::find($id);
+
         return $product;
- 
     }
+
     
     public function update(Request $request, $id)
     {
@@ -45,12 +48,12 @@ class ProductController extends Controller
         return $product;
     }
 
+   
     public function destroy($id)
     {
         $product = product::destroy($id);
 
         return $product;
-
 
     }
 }
