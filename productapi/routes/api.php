@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\Api\Price_ceasa_bhController;
 use App\Http\Controllers\Api\ProductController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -27,12 +26,4 @@ Route::controller(ProductController::class)->group (function () {
     Route::get('/product/{id}','show');
     Route::put('/product/{id}','update');
     Route::delete('/product/{id}','destroy');
-});
-
-Route::controller(Price_ceasa_bhController::class)->group (function () {
-    Route::get('/price_ceasa_bhs','index');
-    Route::post('/price_ceasa_bh','store');
-    Route::get('/price_ceasa_bh/{id}','show');
-    Route::put('/price_ceasa_bh/{id}','update');
-    Route::delete('/price_ceasa_bh/{id}','destroy');
 });

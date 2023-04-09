@@ -3,7 +3,7 @@ import './App.css';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import ShowPrice_ceasa_bhs from './components/ShowPrice_ceasa_bhs';
+import ShowProducts from './components/ShowProducts';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
      <BrowserRouter>
         <Routes>
 
-          <Route path= '/' element={<ShowPrice_ceasa_bhs />} />
+          <Route path= '/' element={<ShowProducts />} />
            
         </Routes>
      </BrowserRouter>  
