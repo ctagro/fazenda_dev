@@ -31,8 +31,8 @@ const deletePrice_ceasa_bh = async () => {
                     <thead className= 'bg-primary text-white'>
                         <tr>
                             <th>Data</th>
+                            <th>Produto</th>
                             <th>Embalagem</th>
-                            <th>Product</th>
                             <th>Price_min</th>
                             <th>Price_com</th>
                             <th>price_max</th>
@@ -42,8 +42,9 @@ const deletePrice_ceasa_bh = async () => {
                     <tbody>
                         { price_ceasa_bhs.map( (price_ceasa_bh) => (
                              <tr Key={price_ceasa_bh.id}>
-                                <td> {price_ceasa_bh.data} </td>
+                                <td> {price_ceasa_bh.date} </td>
                                 <td> {price_ceasa_bh.product} </td>
+                                <td> {price_ceasa_bh.embalagem} </td>
                                 <td> {price_ceasa_bh.price_min} </td>
                                 <td> {price_ceasa_bh.price_com} </td>
                                 <td> {price_ceasa_bh.price_max} </td>
